@@ -1,5 +1,6 @@
 <?php
 session_start();
+<<<<<<< HEAD
 ?>
 <!DOCTYPE html>
 <html>
@@ -150,3 +151,22 @@ if ($page == 'produk') {
 </body>
  
 </html>
+=======
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+
+<h2>Selamat datang, <?php echo $_SESSION['user']; ?>!</h2>
+
+<a href="logout.php">Logout</a>
+
+</body>
+</html>
+>>>>>>> f042595738734471d381163513b50f35bf02efcd
