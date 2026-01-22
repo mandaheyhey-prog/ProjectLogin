@@ -1,4 +1,4 @@
-<?php
+<?p
 <<<<<<< HEAD
 session_start();
 include "koneksi.php"; // pastikan file koneksi ada
@@ -67,6 +67,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </html>
 =======
 header ("Location: login.php");
-exit;
-?>
->>>>>>> f042595738734471d381163513b50f35bf02efcd
+ex
